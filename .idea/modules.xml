@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/practice_preparation.iml" filepath="$PROJECT_DIR$/practice_preparation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/practice_preparation_android.iml" filepath="$PROJECT_DIR$/android/practice_preparation_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice_klondike.iml"
+        filepath="$PROJECT_DIR$/practice_klondike.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/practice_klondike_android.iml"
+        filepath="$PROJECT_DIR$/android/practice_klondike_android.iml" />
     </modules>
   </component>
 </project>

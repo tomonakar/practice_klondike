@@ -1,10 +1,10 @@
 {
   "roots": [
-    "practice_preparation"
+    "practice_klondike"
   ],
   "packages": [
     {
-      "name": "practice_preparation",
+      "name": "practice_klondike",
       "version": "1.0.0+1",
       "dependencies": [
         "cupertino_icons",

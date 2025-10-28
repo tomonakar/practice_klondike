@@ -1,6 +1,6 @@
 {
-    "name": "practice_preparation",
-    "short_name": "practice_preparation",
+    "name": "practice_klondike",
+    "short_name": "practice_klondike",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

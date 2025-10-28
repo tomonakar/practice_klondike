@@ -1,4 +1,4 @@
-package com.example.practice_preparation
+package com.example.practice_klondike
 
 import io.flutter.embedding.android.FlutterActivity
 
