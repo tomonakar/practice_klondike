@@ -1,6 +1,9 @@
+import 'dart:math';
+
 import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
+import 'package:practice_klondike/components/card.dart';
 
 import 'components/foundation.dart';
 import 'components/pile.dart';
@@ -65,6 +68,26 @@ class KlondikeGame extends FlameGame {
     camera.viewfinder.position = Vector2(cardWidth * 3.5 + cardGap * 4, 0);
     // カメラの縦位置はトップに固定する。
     camera.viewfinder.anchor = Anchor.topCenter;
+
+    // カードをランダムに配置
+    final random = Random();
+    // 7列4段のカードを配置
+    for (var i = 0; i < 7; i++) {
+      for (var j = 0; j < 4; j++) {
+        // カードをランダムに生成して配置
+        // カードの数字は1-13, A-Kまで、スートは0-3（♠, ♥, ♦, ♣）まで
+        final card = Card(random.nextInt(13) + 1, random.nextInt(4))
+          // 位置の調整
+          // x座標は、列ごとに1150ずつ増加、y座標は行ごとに1500ずつ増加
+          ..position = Vector2(100 + i * 1150, 100 + j * 1500)
+          ..addToParent(world);
+        // 90%の確率で表向きにする
+        if (random.nextDouble() < 0.9) {
+          // 10%の確率で裏向きにする
+          card.flip();
+        }
+      }
+    }
   }
 }
 
